@@ -17,8 +17,8 @@ public class BasicCalculator {
 
     public void divideBy(double i) {
         if (i == 0) {
-            // throw new RuntimeException("Cannot divide by 0");
-            result = 0;
+            throw new RuntimeException("Cannot divide by 0");
+            // result = 0;
         } else {
             result /= i;
         }
