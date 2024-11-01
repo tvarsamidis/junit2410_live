@@ -1,6 +1,6 @@
 package gr.codehub.tests.util;
 
-public class Calculator {
+public class BasicCalculator {
     private double result = 0;
 
     public void plus(double i) {
