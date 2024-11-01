@@ -4,12 +4,12 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class BasicCalculatorTest {
+public class CalculatorTest {
 
     private final BasicCalculator calculator = new BasicCalculator();
 
     @Test
-    void executeAdditionWithIntegersProperly() {
+    void shouldAddDoubleNumbersCorrectly() {
         calculator.setResult(0);
         calculator.plus(1);
         assertEquals(1, calculator.getResult(), 0.0001);
@@ -17,7 +17,7 @@ public class BasicCalculatorTest {
     }
 
     @Test
-    void runAdditionWithDoublesWithCorrectAnswer() {
+    void shouldAddIntegerNumbersCorrectly() {
         System.out.println("Continuing");
         int d = 1 + 2;
         assertEquals(d, 3);
