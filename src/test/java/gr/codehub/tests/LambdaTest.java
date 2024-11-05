@@ -12,6 +12,7 @@ import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTimeout;
+import static org.junit.jupiter.api.Assertions.assertTimeoutPreemptively;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class LambdaTest {
@@ -31,10 +32,10 @@ public class LambdaTest {
     void shouldCompleteWithinTimeoutUsingLambda() {
 
         System.out.println("Solving a hard problem....");
-        assertTimeout(Duration.ofSeconds(2), () ->
+        assertTimeoutPreemptively(Duration.ofSeconds(2), () ->
                 {
                     System.out.println("doing calculations");
-                    Thread.sleep(1990);
+                    Thread.sleep(30000);
                     System.out.println("calculations done!");
                 }
         );
