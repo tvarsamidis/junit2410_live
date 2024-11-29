@@ -1,4 +1,4 @@
-package gr.codehub.mockito.verfication;
+package gr.codehub.mockito.p4_behavior_verfication;
 
 import gr.codehub.mockito.p04_behavior.verification.Phone;
 import gr.codehub.mockito.p04_behavior.verification.PhoneRepository;
